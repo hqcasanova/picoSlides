@@ -23,7 +23,7 @@ Follow these steps for an installation with default [options](//github.com/hqcas
 3. For each presentation, **add a `data-src` attribute** pointing to its URL on SlideShare:
 
 ```html
-<span class="slides" data-src="http://www.slideshare.net/hqcasanova/the-web-ontology-language"></span>
+<span class="slides" data-src="http://www.slideshare.net/hqcasanova/adapro"></span>
 ```
 
 The container can be any tag and may be given a class to facilitate selection. However, the latter is not required.
@@ -49,7 +49,7 @@ Features
 Minimum Requirements
 --------------------
 
-- **Standards-compliant browser**: the plugin's functionality on outdated browsers such as IE6/7 is severely limited. Nevertheless, the plugin degrades as gracefully as possible.
+- **Modern browser**: the plugin's functionality on outdated browsers such as IE6/7 is severely limited. Nevertheless, it degrades as gracefully as possible.
 - **jQuery 1.6.0+**: though still usable with jQuery 1.5, full functionality and satisfactory performance is only guaranteed with 1.6
 
 Options
@@ -72,7 +72,7 @@ There are two kinds of settings: those having to do with the slides and those mo
 - `linkIcon` *0*: icon for bottom link. If equal to *0*, the favicon at the link's URL is used instead.
 - `linkTitle` *'View on SlideShare'*: tooltip text for the bottom link.
 - `linkHides` *true*: the link can be shown only on the first and last slides.
-- `holderTheme` *'picoSlide'*: theme for Holder plugin. The default *picoSlide* theme makes the placeholder blank with its background colour being [`cssBgColor`](//github.com/hqcasanova/picoSlides#Element-related:-attributes,-loading-indicator-and-CSS-styles).
+- `holderTheme` *'picoSlide'*: theme for Holder plugin. The default *picoSlide* theme makes the placeholder blank with its background colour being [`cssBgColor`](//github.com/hqcasanova/picoSlides#element-related-attributes-loading-indicator-and-css-styles).
 - `apiUrl` *'http://www.slideshare.net/api/oembed/2?url='*: oEmbed API's URL.
 - `loadFirst` *function () {}*: callback after loading first slide image.
 - `loadAll` *function () {}*: callback after loading all of the slides.
@@ -112,7 +112,7 @@ PicoSlides.elemDefs.cssRadius = '10px';
 $('span.slides').picoSlides ({nextTitle: 'Next slide', prevTitle: 'Previous slide', linkTitle: 'Check it out on SlideShare!'});
 ```
 
-- **Instance level**: changes here are specified in the HTML, through a "data-options" attribute of the container for a specific presentation.
+- **Instance level**: changes here are specified in the HTML, through a `data-options` attribute of the container for a specific presentation.
 
 ```html
 <span id="adapro" class="slides" data-src="http://www.slideshare.net/hqcasanova/adapro" data-options='{"linkUrl": "http://adapro.iter.es", "linkIcon": "http://adapro.iter.es/favicon.ico", "linkTitle": "Official project webpage"}'></span>

@@ -50,8 +50,8 @@ Features
 Minimum Requirements
 --------------------
 
-- **Modern browser**: the plugin's functionality on outdated browsers such as IE6/7 is severely limited. Nevertheless, it degrades as gracefully as possible.
-- **jQuery 1.6.0+**: though still usable with jQuery 1.5, full functionality and satisfactory performance is only guaranteed with 1.6
+- **Modern browser**: the plugin's functionality on outdated browsers such as IE6/7 is severely limited. Nevertheless, it degrades as gracefully as possible. IE8 is supported.
+- **jQuery 1.6.0+**: though still usable with jQuery 1.5, full functionality and satisfactory performance is only guaranteed with 1.6. Notice also that jQuery 2.x does not support IE6-8.
 
 Options
 -------
@@ -141,7 +141,7 @@ Plugin Architecture
 License
 -------
 
-All code is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php). In essence, use and modify at your own peril and please keep the licence notice intact.
+All code is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License). In essence, use and modify at your own peril and leave the copyright header intact.
 
 Feedback
 --------

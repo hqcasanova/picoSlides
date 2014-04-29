@@ -1,3 +1,9 @@
+/* Copyright (c) 2014 Hector Quintero Casanova
+ * Released under the MIT license
+ *
+ * Date: 2014-04-29
+ */
+
 /**
  * @fileOverview Adds minimal HTML 'scaffolding' to enable simple navigation and deferred loading of multiple slide sets
  * Intended to be responsive and compatible with all modern browsers (full functionality not guaranteed with IE7 and below).

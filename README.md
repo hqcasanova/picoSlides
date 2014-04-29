@@ -9,25 +9,25 @@ Quick Setup
 Follow these steps for an installation with default [options](//github.com/hqcasanova/picoSlides#options):
 
 1. If not present already, include **`jQuery.js` (version 1.6.0 at least)** in your HTML:
-```html
-<script src="jquery.js"></script>
-```
+	```html
+	<script src="jquery.js"></script>
+	```
 
 2. Include also the **`picoSlides.js` script**, preferably at the bottom; right before the closing body tag:
-```html
-<script src="picoSlides.js"></script>
-```
+	```html
+	<script src="picoSlides.js"></script>
+	```
 
 3. For each presentation, **add a `data-src` attribute** pointing to its URL on SlideShare:
-```html
-<span class="slides" data-src="http://www.slideshare.net/hqcasanova/adapro"></span>
-```
-The container can be any tag and may be given a class to facilitate selection. However, the latter is not required.
+	```html
+	<span class="slides" data-src="http://www.slideshare.net/hqcasanova/adapro"></span>
+	```
+	The container can be any tag and may be given a class to facilitate selection. However, the latter is not required.
 
 4. Finally, **call the picoSlides plugin** on all containers:
-```javascript
-$('span.slides').picoSlides();
-```
+	```javascript
+	$('span.slides').picoSlides();
+	```
 
 Features
 --------
@@ -60,9 +60,9 @@ There are two kinds of settings: those having to do with the slides and those mo
 - `prevTitle` *'Previous'*: tooltip text for 'Previous' button.
 - `skipFTitle` *'Skip to last slide'*: tooltip text for 'Skip forward' button.
 - `skipBTitle` *'Skip to first slide'*: tooltip text for 'Skip back' button.
-- `fadeDuration` *0*: time length of all fade-in effects in milliseconds. It corresponds to the duration parameter of jQuery's fadeIn and fadeOut functions. If equal to *0*, there's no fade-in.
-- `seqLoad` *true*: multiple slides can be loaded by number or not.
-- `lazyLoad` *{}*: options for Lazy Loading first slide.
+- `fadeDuration` *0*: time length of all fade-in effects in milliseconds. It corresponds to the `duration` parameter of jQuery's fadeIn and fadeOut functions. If equal to *0*, there's no fade-in.
+- `seqLoad` *true*: if enabled, multiple slides are forced to be downloaded and displayed according to slide number. Set to false for better performance.
+- `lazyLoad` *{}*: options for lazy loading the first slide. Equivalent to the object passed to the `lazyload()` function.
 - `linkUrl` *0*: URL for bottom link.  If equal to *0*, it's the presentation's URL on SlideShare. If *false* instead, then no link button is displayed.
 - `linkIcon` *0*: icon for bottom link. If equal to *0*, the favicon at the link's URL is used instead.
 - `linkTitle` *'View on SlideShare'*: tooltip text for the bottom link.

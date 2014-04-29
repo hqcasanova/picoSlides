@@ -104,7 +104,8 @@ PicoSlides.elemDefs.cssRadius = '10px';
 - **Selection level**: changes affect the presentations within a certain jQuery selection.
 
 ```javascript
-$('span.slides').picoSlides ({nextTitle: 'Next slide', prevTitle: 'Previous slide',
+$('span.slides').picoSlides ({nextTitle: 'Next slide',
+                              prevTitle: 'Previous slide',
                               linkTitle: 'Check it out on SlideShare!'});
 ```
 

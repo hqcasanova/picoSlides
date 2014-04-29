@@ -1,7 +1,7 @@
-picoSlides
-==========
+![Alt picoSlides](picoSlides.png "picoSlides") picoSlides
+=========================================================
 
-A jQuery plugin for directly embedding SlideShare presentations without using iframes. It leverages SlideShare's oEmbed API to offer a responsive interface enabling optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+A jQuery plugin for directly embedding SlideShare presentations without using iframes. It leverages SlideShare's oEmbed API to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 
 - **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
 
@@ -12,7 +12,7 @@ Read about the rest of the features [here](//github.com/hqcasanova/picoSlides#fe
 Quick Setup
 -----------
 
-Follow these steps for an installation with default [options](//github.com/hqcasanova/picoSlides#options):
+To install with default [options](//github.com/hqcasanova/picoSlides#options), follow the steps below:
 
 1. If not present already, include **`jQuery.js` (version 1.6.0 at least)** in your HTML:
 	```html
@@ -38,13 +38,13 @@ Follow these steps for an installation with default [options](//github.com/hqcas
 Features
 --------
 
-- **Compatible with all modern browsers**: tested in IE8+, Android 2.1+, iPhone 3+ and various versions of Firefox, IceWeasel and Chrome.
+- **Compatible with all modern browsers**: tested in IE8+, Android 2.1+, iPhone 3+ and various versions of other browsers (Firefox/IceWeasel and Chromium).
 - **Compatible with Holder**: includes an [option](//github.com/hqcasanova/picoSlides#options) for customised Holder themes for the first slide.
 - **Compatible with Lazy Load**: lazyload-specific [options](//github.com/hqcasanova/picoSlides#options) can be set for the first slide.
-- **Highly customisable**: from slide aspect ratio, through font colour to callback functions; there's an [option](//github.com/hqcasanova/picoSlides#options) for nearly everything.
+- **Highly customisable**: from slide aspect ratio, through button size to callback functions; there's an [option](//github.com/hqcasanova/picoSlides#options) for nearly everything.
 - **Responsive design**: by default, slide image size depends on the width of the container and thumb-friendly buttons are provided.
 - **Bandwidth efficient**: slide images can be made adaptive. Also, only the cover slide is shown at first. The remaining slides are "lazy loaded".
-- **Optimised footprint**: it's 10KB minified and doesn't require loading an additional CSS file.
+- **Optimised footprint**: it's 10KB minified and doesn't require loading an additional CSS file. All navigation icons are CSS shapes.
 - **Multi-language**: all displayed text can be customised.
 
 Minimum Requirements
@@ -136,7 +136,7 @@ Plugin Architecture
 
 - The plugin's structure is based on the **"highly configurable" pattern** proposed by [Mark Dalgleish](http://markdalgleish.com/2011/05/creating-highly-configurable-jquery-plugins/).
 - To minimise the performance penalty derived from the heavy use of inline styles, a kind of **factory pattern** is employed. All DOM elements are generated only once and stored in an object that acts as a "library" of elements. Whenever insertion is due, the relevant element is pulled from the library and cloned.
-- The plugin makes **minimal use of jQuery**. Future implementations will be library agnostic.
+- The plugin makes **minimal use of jQuery**. Future implementations will be library-agnostic.
 
 License
 -------

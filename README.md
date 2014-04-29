@@ -130,7 +130,7 @@ $('span.slides').picoSlides ({nextTitle: 'Next slide',
 Example
 -------
 
-You can see the plugin in action [here](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hqcasanova/picoSlides/master/test.html) or [here](http://www.hqcasanova.com/en/projects/#glastir).
+You can see the plugin in action on [GitHub's HTML preview](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hqcasanova/picoSlides/master/test.html) or [my projects page](http://www.hqcasanova.com/en/projects/#glastir).
 
 Plugin Architecture
 -------------------

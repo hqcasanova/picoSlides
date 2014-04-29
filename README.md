@@ -1,7 +1,13 @@
 picoSlides
 ==========
 
-A jQuery plugin for directly embedding SlideShare presentations without using iframes. It leverages SlideShare's oEmbed API to offer a responsive interface enabling optimal use of bandwidth and simple slide navigation. Its plethora of options allows, for instance, making the dimensions of any slide images to be fetched dependent on the size of the container for the slides. Also, the first slide image is used as preview of the whole presentation, downloading the rest of it only if the user goes to the next slide.
+A jQuery plugin for directly embedding SlideShare presentations without using iframes. It leverages SlideShare's oEmbed API to offer a responsive interface enabling optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+
+- **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
+
+- **Lazy slide loading**: the first slide image is used as a preview poster of the whole presentation, a la YouTube.  The remaining slides are downloaded only if the user hits the 'Next' button.
+
+Read about the rest of the features [here](//github.com/hqcasanova/picoSlides#features).
 
 Quick Setup
 -----------
@@ -37,7 +43,7 @@ Features
 - **Compatible with Lazy Load**: lazyload-specific [options](//github.com/hqcasanova/picoSlides#options) can be set for the first slide.
 - **Highly customisable**: from slide aspect ratio, through font colour to callback functions; there's an [option](//github.com/hqcasanova/picoSlides#options) for nearly everything.
 - **Responsive design**: by default, slide image size depends on the width of the container and thumb-friendly buttons are provided.
-- **Bandwidth efficient**: only the cover slide is shown at first. The remaining slides are "lazy loaded", once the user goes past the first one.
+- **Bandwidth efficient**: slide images can be made adaptive. Also, only the cover slide is shown at first. The remaining slides are "lazy loaded".
 - **Optimised footprint**: it's 10KB minified and doesn't require loading an additional CSS file.
 - **Multi-language**: all displayed text can be customised.
 

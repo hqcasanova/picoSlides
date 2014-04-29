@@ -104,13 +104,19 @@ PicoSlides.elemDefs.cssRadius = '10px';
 - **Selection level**: changes affect the presentations within a certain jQuery selection.
 
 ```javascript
-$('span.slides').picoSlides ({nextTitle: 'Next slide', prevTitle: 'Previous slide', linkTitle: 'Check it out on SlideShare!'});
+$('span.slides').picoSlides ({nextTitle: 'Next slide', prevTitle: 'Previous slide',
+                              linkTitle: 'Check it out on SlideShare!'});
 ```
 
 - **Instance level**: changes here are specified in the HTML, through a `data-options` attribute of the container for a specific presentation.
 
 ```html
-<span id="adapro" class="slides" data-src="http://www.slideshare.net/hqcasanova/adapro" data-options='{"linkUrl": "http://adapro.iter.es", "linkIcon": "http://adapro.iter.es/favicon.ico", "linkTitle": "Official project webpage"}'></span>
+<span data-src="http://www.slideshare.net/hqcasanova/adapro"
+      data-options='{"linkUrl": "http://adapro.iter.es",
+                     "linkIcon": "http://adapro.iter.es/favicon.ico",
+                     "linkTitle": "Official project webpage"}'
+      class="slides"
+></span>
 ```
 
 Live Example

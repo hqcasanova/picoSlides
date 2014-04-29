@@ -7,7 +7,7 @@ A jQuery plugin for directly embedding SlideShare presentations without using if
 
 - **Lazy slide loading**: the first slide image is used as a preview poster of the whole presentation, a la YouTube.  The remaining slides are downloaded only if the user hits the 'Next' button.
 
-Read about the rest of the features [here](//github.com/hqcasanova/picoSlides#features).
+Discover the rest of the features [here](//github.com/hqcasanova/picoSlides#features).
 
 Quick Setup
 -----------
@@ -44,7 +44,7 @@ Features
 - **Highly customisable**: from slide aspect ratio, through button size to callback functions; there's an [option](//github.com/hqcasanova/picoSlides#options) for nearly everything.
 - **Responsive design**: by default, slide image size depends on the width of the container and thumb-friendly buttons are provided.
 - **Bandwidth efficient**: slide images can be made adaptive. Also, only the cover slide is shown at first. The remaining slides are "lazy loaded".
-- **Optimised footprint**: it's 10KB minified and doesn't require loading an additional CSS file. All navigation icons are CSS shapes.
+- **Self-contained**: doesn't require loading any additional CSS or image file. All navigation icons are CSS shapes.
 - **Multi-language**: all displayed text can be customised.
 
 Minimum Requirements
@@ -88,8 +88,9 @@ There are two kinds of settings: those having to do with the slides and those mo
 - `loadingImg` *base-64 gif*: animated image displayed while loading in progress.
 - `cssButtonSize` *'45px'*: size of all controls.
 - `cssPadding` *'15px'*: default padding for secondary containers (loading indicator and slide counter).
-- `cssFontSize` *'.9em'*: default font size for all elements.
-- `cssLineHeight` *'1.5em'*: default line height for all elements.
+- `cssFontSize` *'.9em'*: default font size for all text elements.
+- `cssLineHeight` *'1.5em'*: default line height for all text elements.
+- `cssFontFamily` *'sans-serif'*: default font family for all text elements.
 - `cssBgColor` *'gray'*: background colour for controls and main container.
 - `cssFgColor` *'white'*: foreground colour for text and control symbols.
 - `cssSeparation` *'1.5%'*: default separation between edge of slides container and controls.

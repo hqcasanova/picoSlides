@@ -1,4 +1,4 @@
-/* Copyright (c) 2014 Hector Quintero Casanova
+/*! Copyright (c) 2014 Hector Quintero Casanova
  * Released under the MIT license
  *
  * Date: 2014-04-29
@@ -28,8 +28,9 @@
             //Overall look & feel (in CSS units)
             cssButtonSize: '45px',  //Size of all controls
             cssPadding: '15px',     //Default padding for secondary containers (loading indicator and slide counter)
-            cssFontSize: '.9em',    //Default font size for all elements
-            cssLineHeight: '1.5em', //Default line height for all elements
+            cssFontSize: '.9em',    //Default font size for all text elements
+            cssLineHeight: '1.5em', //Default line height for all text elements
+            cssFontFamily: 'sans-serif', //Default font family for all text elements
             cssBgColor: 'gray',     //Background colour for controls and main container
             cssFgColor: 'white',    //Foreground colour for text and control symbols
             cssSeparation: '1.5%',  //Default separation between edge of slides container and controls
@@ -72,8 +73,7 @@
             container.style.position = 'relative';
             container.style.display = 'inline-block';
             container.style.textAlign = 'center';
-            container.style.fontSize = elementDefs.cssFontSize;
-            container.style.lineHeight = elementDefs.cssLineHeight;
+            container.style.lineHeight = 0; //Solves issue in HTML5 about a gap between container and the bottom of slide images
             container.style.color = elementDefs.cssFgColor;
             container.style.background = elementDefs.cssBgColor;
             container.style.borderRadius = elementDefs.cssRadius;
@@ -162,7 +162,9 @@
         countChild = countElem.firstChild;
         countChild.style.display = 'inline-block';
         countChild.style.padding = '0 ' + elementDefs.cssPadding;
-        countChild.style.fontFamily = 'sans-serif';
+        countChild.style.lineHeight = elementDefs.cssLineHeight;
+        countChild.style.fontSize = elementDefs.cssFontSize;
+        countChild.style.fontFamily = elementDefs.cssFontFamily;
         countChild.style.fontWeight = 'bold';
         countChild.style.borderRadius = elementDefs.cssRadius + ' ' + elementDefs.cssRadius + ' 0 0';
         countChild.style.opacity = elementDefs.cssOpacity;

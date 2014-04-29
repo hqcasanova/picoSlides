@@ -5,12 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Insert title here</title>
-	<!-- The scripts don't have to be placed here. This is just to ensure proper rendering when using GitHub's htmlpreview -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-	<script src="//raw.githubusercontent.com/hqcasanova/picoSlides/master/picoSlides.min.js"></script>
 	<style type="text/css">
 		span {width: 33%}
 	</style>
+	<!-- The scripts don't have to be placed here. This is just to ensure proper rendering when using GitHub's htmlpreview -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+	<script src="//raw.githubusercontent.com/hqcasanova/picoSlides/master/picoSlides.min.js"></script>
+	<script type="text/javascript">
+	    PicoSlides.elemDefs.cssRadius = '10px';
+		$('span.linkStays').picoSlides({linkHides: false});
+		$('span.linkHides').picoSlides();
+	</script>
 </head>
 <body>
 	<span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-2014-2" ></span>
@@ -22,10 +27,5 @@
 	<span class="linkHides" data-src="http://www.slideshare.net/adriana-victoria/trees-romance" ></span>
 	<span class="linkStays" data-src="http://www.slideshare.net/hqcasanova/glastir-e-science" ></span>
 	<span class="linkHides" data-src="http://www.slideshare.net/hqcasanova/the-web-ontology-language" ></span>
-	<script type="text/javascript">
-	    PicoSlides.elemDefs.cssRadius = '10px';
-		$('span.linkStays').picoSlides({linkHides: false});
-		$('span.linkHides').picoSlides();
-	</script>
 </body>
 </html>

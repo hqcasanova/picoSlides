@@ -127,10 +127,10 @@ $('span.slides').picoSlides ({nextTitle: 'Next slide',
 ></span>
 ```
 
-Live Example
-------------
+Example
+-------
 
-You can see the plugin in action [here](http://www.hqcasanova.com/en/projects/#glastir).
+You can see the plugin in action [here](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hqcasanova/picoSlides/master/test.html) or [here](http://www.hqcasanova.com/en/projects/#glastir).
 
 Plugin Architecture
 -------------------

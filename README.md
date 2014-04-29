@@ -16,19 +16,19 @@ To install with default [options](//github.com/hqcasanova/picoSlides#options), f
 
 1. If not present already, include **`jQuery.js` (version 1.6.0 at least)** in your HTML:
 	```html
-	<script src="jquery.js"></script>
+	<script src="jquery.min.js"></script>
 	```
 
 2. Include also the **`picoSlides.js` script**, preferably at the bottom; right before the closing body tag:
 	```html
-	<script src="picoSlides.js"></script>
+	<script src="picoSlides.min.js"></script>
 	```
 
 3. For each presentation, **add a `data-src` attribute** pointing to its URL on SlideShare:
 	```html
 	<span class="slides" data-src="http://www.slideshare.net/hqcasanova/adapro"></span>
 	```
-	The container can be any tag and may be given a class to facilitate selection. However, the latter is not required.
+	The container can be any tag and may be given a class to facilitate selection. However, the latter is not required either.
 
 4. Finally, **call the picoSlides plugin** on all containers:
 	```javascript

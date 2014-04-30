@@ -39,8 +39,7 @@ Features
 --------
 
 - **Compatible with all modern browsers**: tested in IE8+, Android 2.1+, iPhone 3+ and various versions of other browsers (Firefox/IceWeasel and Chromium).
-- **Compatible with Holder**: includes an [option](//github.com/hqcasanova/picoSlides#options) for customised Holder themes for the first slide.
-- **Compatible with Lazy Load**: lazyload-specific [options](//github.com/hqcasanova/picoSlides#options) can be set for the first slide.
+- **Auto-detects Lazy Load and Holder**: ensures smooth lazy loading of the first slide image. Includes [options](//github.com/hqcasanova/picoSlides#options) that control Holder's theme and Lazy Load's behaviour.
 - **Highly customisable**: from slide aspect ratio, through button size to callback functions; there's an [option](//github.com/hqcasanova/picoSlides#options) for nearly everything.
 - **Responsive design**: by default, slide image size depends on the width of the container and thumb-friendly buttons are provided.
 - **Bandwidth efficient**: slide images can be made adaptive. Also, only the cover slide is shown at first. The remaining slides are "lazy loaded".

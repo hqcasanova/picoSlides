@@ -31,7 +31,10 @@
 		var spans, spansNum, height, i;
 		if (window.getComputedStyle) {
 			spans = document.getElementsByTagName('span');
-			height = (parseInt (window.getComputedStyle(spans[0], null).getPropertyValue('width')) * 0.75) +'px';
+			alert (window.getComputedStyle(spans[0], null).getPropertyValue('width'));
+			alert (parseInt (window.getComputedStyle(spans[0], null).getPropertyValue('width')));
+			alert (parseInt(window.getComputedStyle(spans[0], null).getPropertyValue('width')) * 0.75);
+			height = (parseInt(window.getComputedStyle(spans[0], null).getPropertyValue('width')) * 0.75) +'px';
 			spansNum = spans.length;
 			for (i = 0; i < spansNum; i++) {
 			    spans[i].style.height = height;

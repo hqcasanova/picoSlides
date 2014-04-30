@@ -1,10 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>picoSlides - responsive SlideShare embedding</title>
+	<style type="text/css">
+		span {width: 33%}
+	</style>
 </head>
 <body>
-Hello world!
+	<span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-2014-2" ></span>
+	<span class="linkStays" data-src="http://www.slideshare.net/hqcasanova/adapro" data-options='{"linkUrl": "http://adapro.iter.es", "linkTitle": "Official website"}'></span>
+	<span class="linkHides" data-src="http://www.slideshare.net/Pamela-Wilson/visual-content" ></span>
+	<span class="linkHides" data-src="http://www.slideshare.net/hqcasanova/e-science-14984932" ></span>
+	<span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-20141" ></span>
+	<span class="linkHides" data-src="http://www.slideshare.net/prakit/stunning-reflection-images" ></span>
+	<span class="linkHides" data-src="http://www.slideshare.net/adriana-victoria/trees-romance" ></span>
+	<span class="linkStays" data-src="http://www.slideshare.net/hqcasanova/glastir-e-science" ></span>
+	<span class="linkHides" data-src="http://www.slideshare.net/hqcasanova/the-web-ontology-language" ></span>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+	<script src="//raw.githubusercontent.com/hqcasanova/picoSlides/master/picoSlides.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+		    PicoSlides.elemDefs.cssRadius = '10px';
+			$('span.linkStays').picoSlides({linkHides: false});
+			$('span.linkHides').picoSlides();
+		});
+	</script>
 </body>
 </html>

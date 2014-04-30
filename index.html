@@ -56,6 +56,7 @@
 	<script type="text/javascript">
 		PicoSlides.elemDefs.cssBgColor = 'black';
 		PicoSlides.elemDefs.cssOpacity = 0.45;
+		PicoSlides.slideDefs.loadFirst = function () {alert(this.outerHTML)};
 		$('span.linkStays').picoSlides({linkHides: false});
 		$('span.linkHides').picoSlides();
 	</script>

@@ -14,7 +14,7 @@
 		    height: 100%;
 		}
 		body {background: black; text-align: right}
-		body > span {width: 33%}
+		body > span {display: inline-block; width: 33%}
 	</style>
 </head>
 <body>
@@ -34,7 +34,7 @@
 			height = (parseInt (window.getComputedStyle(spans[0], null).getPropertyValue('width')) * 3/4) +'px';
 			spansNum = spans.length;
 			for (i = 0; i < spansNum; i++) {
-			    spans[i].style.lineHeight = height;
+			    spans[i].style.height = height;
 			}
 		}
 	</script>

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>picoSlides - responsive SlideShare embedding</title>
 	<style type="text/css">
+		body {line-height: 0}
 		span {width: 33%}
 	</style>
 </head>
@@ -22,7 +23,6 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 	<script src="//hqcasanova.github.io/picoSlides/picoSlides.min.js"></script>
 	<script type="text/javascript">
-		PicoSlides.elemDefs.cssRadius = '10px';
 		$('span.linkStays').picoSlides({linkHides: false});
 		$('span.linkHides').picoSlides();
 	</script>

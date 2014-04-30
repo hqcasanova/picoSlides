@@ -19,12 +19,12 @@
 			overflow: hidden;
 			width: 33%
 		}
-		@media only screen and (max-width: 639px ) {
+		/*@media only screen and (max-width: 639px ) {
 			body > span {width: 100%}
 		}
 		@media only screen and (min-width: 640px) and (max-width: 959px ) {
 			body > span {width: 50%}
-		}
+		}*/
 	</style>
 </head>
 <body>
@@ -58,9 +58,9 @@
 		PicoSlides.elemDefs.cssBgColor = 'black';
 		PicoSlides.elemDefs.cssOpacity = 0.45;
 		PicoSlides.slideDefs.loadFirst = function () {
-		    //Reset height to auto after first image loaded (so as not to break responsiveness)
+		    /*Reset height to auto after first image loaded (so as not to break responsiveness)
 		    i -= 1;
-		    spans[i].style.height = 'auto';
+		    spans[i].style.height = 'auto';*/
 		};
 		$('span.linkStays').picoSlides({linkHides: false});
 		$('span.linkHides').picoSlides();

@@ -1,5 +1,5 @@
-![Alt picoSlides](picoSlides.png "picoSlides") picoSlides
-=========================================================
+![Alt picoSlides](//hqcasanova.github.io/picoSlides/picoSlides.png "picoSlides") picoSlides
+===========================================================================================
 
 A jQuery plugin for directly embedding SlideShare presentations without using iframes. It leverages SlideShare's oEmbed API to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 

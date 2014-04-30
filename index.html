@@ -14,7 +14,17 @@
 		    height: 100%;
 		}
 		body {background: black; text-align: right}
-		body > span {display: inline-block; overflow: hidden; width: 33%}
+		body > span {
+			display: inline-block;
+			overflow: hidden;
+			width: 33%
+		}
+		@media only screen and (max-width: 640px ) {
+			body > span {width: 100%}
+		}
+		@media only screen and (max-width: 960px ) {
+			body > span {width: 50%}
+		}
 	</style>
 </head>
 <body>

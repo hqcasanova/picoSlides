@@ -31,7 +31,7 @@
 		var spans, spansNum, height, i;
 		if (window.getComputedStyle) {
 			spans = document.getElementsByTagName('span');
-			height = (parseInt (window.getComputedStyle(spans[0], null).getPropertyValue('width')) * aspRatio) +'px';
+			height = (parseInt (window.getComputedStyle(spans[0], null).getPropertyValue('width')) * 3/4) +'px';
 			spansNum = spans.length;
 			for (i = 0; i < spansNum; i++) {
 			    spans[i].style.lineHeight = height;

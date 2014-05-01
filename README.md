@@ -1,7 +1,7 @@
 ![Alt picoSlides](http://hqcasanova.github.io/picoSlides/picoSlides.png "picoSlides") picoSlides
 ===========================================================================================
 
-Trying to craft an efficient and nifty gallery of presentations but IFRAMEs keep getting in the way? That's what **picoSlides** is for: a jQuery plugin for directly embedding SlideShare presentations without using IFRAMEs. It leverages SlideShare's oEmbed API to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+Trying to craft an efficient and nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a jQuery plugin for directly embedding SlideShare presentations without using IFRAMEs. It leverages SlideShare's **oEmbed API** to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 
 - **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
 
@@ -141,4 +141,4 @@ All code is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_Li
 Feedback
 --------
 
-If you find a bug or shortcoming while using the plugin, please feel free to report it using github's [issue tracker](https://github.com/hqcasanova/picoSlides/issues). For other matters, you are more than welcome to leave a message on my [website](http://www.hqcasanova.com). Let me know if you find **picoSlides** useful. Thank you.
+If you find a bug or shortcoming while using the plugin, please feel free to report it using github's [issue tracker](https://github.com/hqcasanova/picoSlides/issues). For other matters, you are more than welcome to leave a message on my [website](http://www.hqcasanova.com). Let me know if you find *picoSlides* useful. Thank you.

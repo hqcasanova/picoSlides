@@ -1,13 +1,13 @@
 ![Alt picoSlides](http://hqcasanova.github.io/picoSlides/picoSlides.png "picoSlides") picoSlides
 ===========================================================================================
 
-A jQuery plugin for directly embedding SlideShare presentations without using iframes. It leverages SlideShare's oEmbed API to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+Trying to craft an efficient and nifty gallery of presentations but IFRAMEs keep getting in the way? That's what **picoSlides** is for: a jQuery plugin for directly embedding SlideShare presentations without using iframes. It leverages SlideShare's oEmbed API to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 
 - **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
 
 - **Lazy slide loading**: the first slide image is used as a preview poster of the whole presentation, a la YouTube.  The remaining slides are downloaded only if the user hits the 'Next' button.
 
-Discover the rest of the features [here](//github.com/hqcasanova/picoSlides#features).
+You can see an **example** of the plugin in action **[here](http://hqcasanova.github.io/picoSlides/)**. Read [below](//github.com/hqcasanova/picoSlides#features) for a list of all the features.
 
 Quick Setup
 -----------
@@ -125,11 +125,6 @@ $('span.slides').picoSlides ({nextTitle: 'Next slide',
       class="slides"
 ></span>
 ```
-
-Examples
---------
-
-You can see the plugin in action on [GitHub's HTML preview](http://htmlpreview.github.io/?https://raw.githubusercontent.com/hqcasanova/picoSlides/master/test.html) or [my projects page](http://www.hqcasanova.com/en/projects/#glastir).
 
 Plugin Architecture
 -------------------

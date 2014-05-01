@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>picoSlides - responsive SlideShare embedding</title>
+	<meta name="description" content="A responsive jQuery plugin for IFRAME-free embedding and simple navigation of SlideShare presentations" />
+	<title>picoSlides | responsive SlideShare embedding</title>
 	<style type="text/css">
 		html, body {
 		    margin: 0;
@@ -39,10 +40,18 @@
 			margin: 0;
 			color: gray;
 			font-family: serif;
-			opacity: .75;
 		}
-		h1:hover {opacity: 1}
 		h1 img {vertical-align: middle}
+		span:first-child a.linkSlide {
+			background: #008ad2 !important;
+			border-radius: 10px;
+		}
+		#info {
+			background: #008ad2;
+			padding: 1.5%;
+			color: #f38f1f;
+			font-family: 'sans-serif';
+		}
 		@media only screen and (max-width: 639px ) {
 			body > span {width: 100%; padding-top: 75%}
 		}
@@ -52,8 +61,8 @@
 	</style>
 </head>
 <body>
-	<h1><img alt="logo" src="//hqcasanova.github.io/picoSlides/picoSlides.png"/>picoSlides</h1>
-	<span class="linkHides" data-src="http://www.slideshare.net/alitamay/smithsonian-magazine-2nd-annual-photo-contest" ></span><!--
+	<h1><img alt="logo" src="picoSlides.png"/>picoSlides</h1>
+	<span class="linkStays" data-src="http://www.slideshare.net/alitamay/smithsonian-magazine-2nd-annual-photo-contest" data-options='{"linkUrl": "#info", "linkIcon":"info.png", "linkTitle": "Information and download"}' ></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-20141"></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-2014-2" ></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/the-25th-annual-national-geographic-traveler-photo-contest" ></span><!--
@@ -66,12 +75,20 @@
 	--><span class="linkStays" data-src="http://www.slideshare.net/MajedKhalil/tenerife-majed-khalil" data-options='{"linkUrl": "http://en.wikipedia.org/wiki/Tenerife", "linkTitle": "Wikipedia"}'></span><!--
 	--><span class="linkStays" data-src="http://www.slideshare.net/hqcasanova/glastir-e-science" ></span>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-	<script src="//hqcasanova.github.io/picoSlides/picoSlides.min.js"></script>
+	<script src="picoSlides.min.js"></script>
 	<script type="text/javascript">
 		PicoSlides.elemDefs.cssBgColor = 'black';
 		PicoSlides.elemDefs.cssOpacity = 0.45;
 		$('span.linkStays').picoSlides({linkHides: false});
 		$('span.linkHides').picoSlides();
 	</script>
+	<p id="info">
+		Trying to craft an efficient and nifty gallery like the one above but IFRAMEs keep getting in the way? That's what picoSlides is for: a jQuery plugin for directly embedding SlideShare presentations without using IFRAMEs. It leverages SlideShare's <strong>oEmbed API</strong> to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+		<ul>
+			<li><strong>Adaptive slide images</strong>: fetches device-appropriate versions of images depending on the dimensions of the slideset container.</li>
+			<li><strong>Lazy slide loading</strong>: the first slide image is used as a preview poster of the whole presentation, a la YouTube. The remaining slides are downloaded only if the user hits the 'Next' button.</li>
+		</ul>
+		For details on dowloading the plugin, how to install it or available settings, please see the <a title="Project page on GitHub" src="https://github.com/hqcasanova/picoSlides#quick-setup">GitHub</a>.
+	</p>
 </body>
 </html>

@@ -46,28 +46,11 @@
 	--><span class="linkStays" data-src="http://www.slideshare.net/hqcasanova/adapro" data-options='{"linkUrl": "http://adapro.iter.es", "linkTitle": "Official website"}'></span><!--
 	--><span class="linkStays" data-src="http://www.slideshare.net/MajedKhalil/tenerife-majed-khalil" data-options='{"linkUrl": "http://en.wikipedia.org/wiki/Tenerife", "linkTitle": "Wikipedia"}'></span><!--
 	--><span class="linkStays" data-src="http://www.slideshare.net/hqcasanova/glastir-e-science" ></span>
-	<script type="text/javascript">
-		/*Set height of slide containers to the first image's height (according to aspect ratio 3/4) to avoid jumps when loading the latter
-		var spans, spansNum, height, i;
-		if (window.getComputedStyle) {
-			spans = document.getElementsByTagName('span');
-			height = (parseInt(window.getComputedStyle(spans[0], null).getPropertyValue('width')) * 0.74) +'px';
-			spansNum = spans.length;
-			for (i = 0; i < spansNum; i += 1) {
-			    spans[i].style.height = height;
-			}
-		}*/
-	</script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 	<script src="//hqcasanova.github.io/picoSlides/picoSlides.min.js"></script>
 	<script type="text/javascript">
 		PicoSlides.elemDefs.cssBgColor = 'black';
 		PicoSlides.elemDefs.cssOpacity = 0.45;
-		PicoSlides.slideDefs.loadFirst = function () {
-		    /*Reset height to auto after first image loaded (so as not to break responsiveness)
-		    i -= 1;
-		    spans[i].style.height = 'auto';*/
-		};
 		$('span.linkStays').picoSlides({linkHides: false});
 		$('span.linkHides').picoSlides();
 	</script>

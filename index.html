@@ -78,17 +78,19 @@
 		#info a, #info em {font-size: 1.05em}
 		#info strong, #info em, #info a, a.infoButton {color: #dc8422}
 		@media only screen and (max-width: 639px ) {
-			body > span {width: 100%; padding-top: 75%}
+			body > span {padding-top: 75%}
+			body > span, #title {width: 100%}
 		}
 		@media only screen and (min-width: 640px) and (max-width: 959px ) {
-			body > span {width: 50%; padding-top: 37.5%}
+			body > span {padding-top: 37.5%}
+			body > span, #title {width: 50%}
 		}
 	</style>
 </head>
 <body>
 	<div id="title">
 		<h1><img alt="logo" src="picoSlides.png" height="67" width="67"/>picoSlides</h1>
-		<a class="infoButton" href="#info" title="More information">i</a>
+		<a class="infoButton" href="#info" title="More information">+i</a>
 	</div>
 	<span class="linkHides" data-src="http://www.slideshare.net/alitamay/smithsonian-magazine-2nd-annual-photo-contest" data-options='{"linkUrl": false}'></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-20141"></span><!--

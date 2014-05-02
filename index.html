@@ -25,7 +25,6 @@
 			overflow: hidden;
 			width: 33.3%;
 			padding-top: 24.95%;
-			background: transparent !important;
 		}
 		span.containerSlide > img:first-child {
 			position: absolute;
@@ -90,7 +89,8 @@
 	<script src="picoSlides.min.js"></script>
 	<script type="text/javascript">
 		PicoSlides.slideDefs.fadeDuration = 'fast';
-		PicoSlides.slideDefs.lazyLoad = {threshold: 50, effect: "fadeIn", placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII="}
+		PicoSlides.slideDefs.lazyLoad = {threshold: 50, effect: "fadeIn", placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII="};
+		PicoSlides.elementDefs.cssBackground = black;
 		$('span.linkStays').picoSlides({linkHides: false});
 		$('span.linkHides').picoSlides();
 	</script>

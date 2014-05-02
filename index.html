@@ -35,18 +35,18 @@
 			margin-left: -36.5px;
 			margin-top: -20.5px;
 		}
-		h1 {
+		#title {
+			width: 33.3%;
 			z-index: 99;
 			position: absolute;
+		}
+		h1 {
 			line-height: normal;
 			color: gray;
 		}
 		h1 img {vertical-align: middle}
 		a.infoButton {
-			position: fixed;
-			z-index: 99;
-			bottom: 0;
-			left: 0;
+			float: right;
 			margin: 5px;
 			width: 60px;
 			line-height: 60px;
@@ -63,7 +63,6 @@
 		a.infoButton:hover {opacity: 1}
 		a.infoButton, h1 {font-family: serif}
 		#info {
-			z-index: 999;
 			padding: 1.5%;
 			color: #f0f0f0;
 			line-height: 1.5em;
@@ -87,8 +86,11 @@
 	</style>
 </head>
 <body>
-	<h1><img alt="logo" src="picoSlides.png" height="67" width="67"/>picoSlides</h1> <a class="infoButton" href="#info" title="More information">i</a>
-	<span class="linkHides" data-src="http://www.slideshare.net/alitamay/smithsonian-magazine-2nd-annual-photo-contest"></span><!--
+	<div id="title">
+		<h1><img alt="logo" src="picoSlides.png" height="67" width="67"/>picoSlides</h1>
+		<a class="infoButton" href="#info" title="More information">i</a>
+	</div>
+	<span class="linkHides" data-src="http://www.slideshare.net/alitamay/smithsonian-magazine-2nd-annual-photo-contest" data-options='{"linkUrl": false}'></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-20141"></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-2014-2" ></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/the-25th-annual-national-geographic-traveler-photo-contest" ></span><!--

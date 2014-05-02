@@ -3,7 +3,7 @@ picoSlides
 
 <img src="http://hqcasanova.github.io/picoSlides/picoSlides.png" align="left" hspace="10" vspace="1">
 
-Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a jQuery plugin for directly embedding *SlideShare* presentations without using IFRAMEs. It leverages SlideShare's **oEmbed API** to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a **jQuery plugin** for directly embedding *SlideShare* presentations without using IFRAMEs. It leverages SlideShare's **oEmbed API** to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 
 - **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
 

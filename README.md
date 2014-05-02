@@ -1,7 +1,9 @@
-![Alt picoSlides](http://hqcasanova.github.io/picoSlides/picoSlides.png "picoSlides") picoSlides
-===========================================================================================
+picoSlides
+==========
 
-Trying to craft an efficient and nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a jQuery plugin for directly embedding SlideShare presentations without using IFRAMEs. It leverages SlideShare's **oEmbed API** to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+<img src="picoSlides.png" align="left" hspace="10" vspace="1">
+
+Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a jQuery plugin for directly embedding *SlideShare* presentations without using IFRAMEs. It leverages SlideShare's **oEmbed API** to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 
 - **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
 
@@ -19,7 +21,7 @@ To install with default [options](//github.com/hqcasanova/picoSlides#options), f
 	<script src="jquery.min.js"></script>
 	```
 
-2. Include also the **`picoSlides.js` script**, preferably at the bottom; right before the closing body tag:
+2. Once [downloaded](picoSlides.min.js), include also the **`picoSlides.min.js` script**:
 	```html
 	<script src="picoSlides.min.js"></script>
 	```

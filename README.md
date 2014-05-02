@@ -9,7 +9,7 @@ Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the
 
 - **Lazy slide loading**: the first slide image is used as a preview poster of the whole presentation, a la YouTube.  The remaining slides are downloaded only if the user hits the 'Next' button.
 
-You can see an **example** of the plugin in action **[here](http://hqcasanova.github.io/picoSlides/)**. Read [below](//github.com/hqcasanova/picoSlides#features) for a list of all the features.
+You can see an **example** of the plugin in action [here](http://hqcasanova.github.io/picoSlides/). Read [below](//github.com/hqcasanova/picoSlides#features) for a list of all the features.
 
 Quick Setup
 -----------

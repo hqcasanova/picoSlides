@@ -69,12 +69,12 @@ There are two kinds of settings: those having to do with the slides and those mo
 - `skipBTitle` *'Skip to first slide'*: tooltip text for 'Skip back' button.
 - `fadeDuration` *0*: time length of all fade-in effects in milliseconds. It corresponds to the `duration` parameter of jQuery's fadeIn and fadeOut functions. If equal to `0`, there's no fade-in.
 - `seqLoad` *true*: if enabled, multiple slides are forced to be downloaded and displayed according to slide number. Set to `false` for better performance.
-- `lazyLoad` *{}*: options for lazy loading the first slide. Equivalent to the object passed to the `lazyload()` function.
+- `lazyLoad` *{}*: options for lazy loading the first slide. Equivalent to the object passed to the `lazyload()` function. If `false`, Lazy Load is not used even if present.
 - `linkUrl` *0*: URL for bottom link.  If equal to `0`, it's the presentation's URL on SlideShare. If `false` instead, then no link button is displayed.
 - `linkIcon` *0*: icon for bottom link. If equal to `0`, the favicon at the link's URL is used instead.
 - `linkTitle` *'View on SlideShare'*: tooltip text for the bottom link.
 - `linkHides` *true*: the link can be shown only on the first and last slides.
-- `holderTheme` *'picoSlide'*: theme for Holder plugin. The default `picoSlide` theme makes the placeholder blank with its background colour being [`cssBgColor`](//github.com/hqcasanova/picoSlides#element-related-attributes-loading-indicator-and-css-styles).
+- `holderTheme` *'picoSlide'*: theme for Holder plugin. The default `picoSlide` theme makes the placeholder blank with its background colour being [`cssBgColor`](//github.com/hqcasanova/picoSlides#element-related-attributes-loading-indicator-and-css-styles). A value of `false` disables the use of Holder, even if present.
 - `apiUrl` *'http://www.slideshare.net/api/oembed/2?url='*: oEmbed API's URL.
 - `loadFirst` *function () {}*: callback after loading first slide image.
 - `loadAll` *function () {}*: callback after loading all of the slides.

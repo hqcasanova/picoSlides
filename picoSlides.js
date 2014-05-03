@@ -287,20 +287,20 @@
     PicoSlides.prototype = {
         defaults: {
             aspectRatio: 3 / 4,     //Common aspect ratio of slides
-            imgMaxWidth: 0,         //Maximum width of slides in pixels. If 0, it takes the container's width
+            imgMaxWidth: 0,         //Max width of slide images in pixels requested from server. If 0, it takes the container's width.
             nextTitle: 'Next',      //Tooltip text for 'Next' button
             prevTitle: 'Previous',  //Tooltip text for 'Previous' button
             skipFTitle: 'Skip to last slide',   //Tooltip text for 'Skip forward' button
             skipBTitle: 'Skip to first slide',  //Tooltip text for 'Skip back' button
             fadeDuration: 0,        //Time length of fade-in effects in milliseconds. If 0, there's no fade-in
             seqLoad: true,          //Multiple slides can be loaded by number or not
-            lazyLoad: {},           //Options for Lazy Loading first slide
+            lazyLoad: {},           //Options for Lazy Loading first slide. If false, Lazy Load is not used (autodection cancelled).
             linkUrl: 0,             //URL for bottom link.  If 0, it's the presentation's URL on SlideShare
                                     //                      If false, no link button is displayed
             linkIcon: 0,            //Icon for bottom link. If 0, favicon at link URL is used instead
             linkTitle: 'View on SlideShare',    //Tooltip text for bottom link
             linkHides: true,            //The link can be shown only on the first and last slides
-            holderTheme: 'picoSlide',   //Theme for Holder plugin. picoSlide = blank space coloured in cssBgColor
+            holderTheme: 'picoSlide',   //Theme for Holder plugin. picoSlide = blank space coloured in cssBgColor. False = Holder not used.
             apiUrl: 'http://www.slideshare.net/api/oembed/2?url=',  //Oembed API's URL
             loadFirst: function () {},  //Callback after loading first slide image
             loadAll: function () {},    //Callback after loading all of the slides
@@ -605,10 +605,10 @@
                 }
             };
 
-            //If Holder plugin present, show fluid placeholder while first slide loads
+            //If Holder plugin present and autodetection enabled, show fluid placeholder while first slide loads
             //Canvas fallback doesn't resize on Android 2.1 at least (even with 'auto', dimensions remain fixed).
             //As a temporary fix, the dimensions fed to Holder are computed ones, as opposed to the 'width' and 'height' attributes in the IMG tag.
-            if (typeof Holder !== 'undefined') {
+            if ((typeof Holder !== 'undefined') && (_this.settings.holderTheme !== false)) {
                 $firstSlide.attr('data-src', 'holder.js/' + $firstSlide.width() + 'x' + Math.round($firstSlide.width() * _this.settings.aspectRatio) + '/auto/' + _this.settings.holderTheme);
                 //$firstSlide.attr ('data-src', 'holder.js/' +$firstSlide.attr('width')+ 'x' +$firstSlide.attr('height')+ '/auto/' +_this.settings.holderTheme);
 
@@ -619,8 +619,8 @@
                 Holder.run({images: $firstSlide[0]});
             }
 
-            //If Lazy Load plugin present, apply it to first slide. First load event will not count (triggered by lazyload's own placeholder).
-            if ($.fn.lazyload) {
+            //If Lazy Load plugin present and autodetection enabled, apply it to first slide. First load event will not count (triggered by lazyload's own placeholder).
+            if ($.fn.lazyload && (_this.settings.lazyLoad !== false)) {
                 $firstSlide.lazyload(_this.settings.lazyLoad);
 
             //Just load the image straight away.

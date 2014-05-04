@@ -54,11 +54,11 @@ Features
 body > span {
 	display: inline-block;
 	overflow: hidden;
-	width: 33.3%;          //3-column layout
-	padding-top: 24.95%;   //aspect ratio 3:4
+	width: 33.3%;          /* 3-column layout */
+	padding-top: 24.95%;   /* aspect ratio 3:4 */
 }
 span.containerSlide > img:first-child {
-	position: absolute;    //counteract fixed height
+	position: absolute;    /* counteract fixed height */
 	top: 0;
 	left: 0;
 }

@@ -58,7 +58,7 @@ body > span {
 	padding-top: 24.95%;   /* aspect ratio 3:4 */
 }
 span.containerSlide > img:first-child {
-	position: absolute;    /* counteract fixed height */
+	position: absolute;    /* counteracts fixed height */
 	top: 0;
 	left: 0;
 }

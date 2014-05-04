@@ -49,19 +49,20 @@ Features
 - **Multi-language**: all displayed text can be customised.
 
 *Please note that neither Lazy Load nor Holder are required. In fact, if the relative `width` of the slides' container is set on page load and the aspect ratio is known, a better alternative to Holder would be [CSS proportional resizing](http://wellcaffeinated.net/articles/2012/12/10/very-simple-css-only-proportional-resizing-of-elements/). That's precisely the technique used on the [project page](http://hqcasanova.github.io/picoSlides/):
-	```css
-	body > span {
-		display: inline-block;
-		overflow: hidden;
-		width: 33.3%;
-		padding-top: 24.95%;
-	}
-	span.containerSlide > img:first-child {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	```
+
+```css
+body > span {
+	display: inline-block;
+	overflow: hidden;
+	width: 33.3%;
+	padding-top: 24.95%;
+}
+span.containerSlide > img:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+```
 
 Minimum Requirements
 --------------------

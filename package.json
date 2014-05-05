@@ -1,0 +1,45 @@
+{
+  "name": "picoSlides",
+  "version": "1.0.0",
+  "summary": "A responsive jQuery plugin for IFRAME-free embedding and simple navigation of SlideShare presentations",
+  "description": "Leverages SlideShare's oEmbed API to offer two key features for bandwidth-conscious embedding: adaptive slide images for responsive interfaces and lazy slide loading a la YouTube",
+  "main": "picoSlides.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hqcasanova/picoSlides.git"
+  },
+  "keywords": [
+    "slide",
+    "embed",
+    "responsive",
+    "adaptive",
+    "oembed",
+    "slideshare",
+    "lazy",
+    "jquery",
+    "bandwidth",
+    "presentation"
+  ],
+  "author": {
+    "author": "Hector Quintero Casanova",
+    "email": "hqcasanova@yahoo.com",
+    "url": "http://www.hqcasanova.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "bugs": {
+    "url": "https://github.com/hqcasanova/picoSlides/issues"
+  },
+  "homepage": "https://github.com/hqcasanova/picoSlides",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

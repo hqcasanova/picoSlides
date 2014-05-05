@@ -1,0 +1,16 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "expr": true,
+  "latedef": true,
+  "onevar": true,
+  "noarg": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true,
+  "quotmark": true,
+  "node": true,
+  "jquery": true,
+  "browser": true
+}

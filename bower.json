@@ -1,0 +1,38 @@
+{
+  "name": "picoSlides",
+  "main": "picoSlides.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/hqcasanova/picoSlides",
+  "authors": [
+    "hqcasanova <hqcasanova@yahoo.com>"
+  ],
+  "description": "A responsive jQuery plugin for IFRAME-free embedding and simple navigation of SlideShare presentations",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "slide",
+    "embed",
+    "responsive",
+    "adaptive",
+    "oembed",
+    "slideshare",
+    "lazy",
+    "jquery",
+    "bandwidth",
+    "presentation"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6.0"
+  }, 	
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

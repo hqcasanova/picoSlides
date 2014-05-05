@@ -21,7 +21,7 @@ To install with default [options](//github.com/hqcasanova/picoSlides#options), f
 	<script src="jquery.min.js"></script>
 	```
 
-2. Once [downloaded](picoSlides.min.js), include also the **`picoSlides.min.js` script**:
+2. Once [downloaded](https://github.com/hqcasanova/picoSlides/archive/v1.0.0.zip), include also the **`picoSlides.min.js` script**:
 	```html
 	<script src="picoSlides.min.js"></script>
 	```

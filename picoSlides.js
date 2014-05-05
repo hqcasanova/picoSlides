@@ -1,7 +1,6 @@
-/*! Copyright (c) 2014 Hector Quintero Casanova
+/* picoSlides v1.0.0
+ * Copyright (c) 2014 Hector Quintero Casanova
  * Released under the MIT license
- *
- * Date: 2014-04-29
  */
 
 /**
@@ -11,7 +10,7 @@
  * @version git-master
  * @author <a href="http://www.hqcasanova.com">hqcasanova</a>
  */
-;(function (window, $, document, undef) {
+;(function (window, $, document, undefined) {
     'use strict';
 
     var PicoSlides,         //Object representing a set of slides and its navigational elements
@@ -614,9 +613,9 @@
 
                 //No custom Holder theme defined => get rid of default text and use solid background
                 if (_this.settings.holderTheme === 'picoSlide') {
-                    Holder.add_theme('picoSlide', {background: elementDefs.cssBgColor, text: ' '});
+                    Holder.add_theme('picoSlide', {background: elementDefs.cssBgColor, text: ' '}); // jshint ignore:line
                 }
-                Holder.run({images: $firstSlide[0]});
+                Holder.run({images: $firstSlide[0]}); // jshint ignore:line
             }
 
             //If Lazy Load plugin present and autodetection enabled, apply it to first slide. First load event will not count (triggered by lazyload's own placeholder).
@@ -657,7 +656,7 @@
                     _this.scaffolding(data);
 
                 //Show feedback upon timeout
-                }).fail(function (j, t, e) {
+                }).fail(function (j, t, e) {  // jshint ignore:line
                     if (t === 'timeout') {
                         _this.$elem.html(_this.settings.timeoutErr);
                     }
@@ -674,7 +673,7 @@
     $.fn.picoSlides = function (slideOps) {
         elementLibrary();    //populates the library once for all subsequent PicoSlides instances
         setsToLoad = this.length;
-        return this.each(function() {
+        return this.each(function () {
             new PicoSlides(this, slideOps).init();
         });
     };

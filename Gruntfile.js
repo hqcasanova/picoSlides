@@ -5,16 +5,16 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) 2014 Hector Quintero Casanova | Released under <%= pkg.license.type %> License */\n',
+    banner: '/*! picoSlides v<%= pkg.version %> | (c) 2014 Hector Quintero Casanova | Released under <%= pkg.license.type %> License */\n',
     // Task configuration.
     jshint: {
-      src: ['Gruntfile.js', '<%= pkg.name %>.js'],
+      src: ['Gruntfile.js', 'picoSlides.js'],
       options: {
 	jshintrc: true
       }
     },
     watch: {
-      files: ['Gruntfile.js', '<%= pkg.name %>.js'],
+      files: ['Gruntfile.js', 'picoSlides.js'],
       tasks: 'default'
     },
     uglify: {
@@ -22,8 +22,8 @@ module.exports = function(grunt) {
         banner: '<%= banner %>'
       },
       dist: {
-        src: '<%= pkg.name %>.js',
-        dest: '<%= pkg.name %>.min.js'
+        src: 'picoSlides.js',
+        dest: 'picoSlides.min.js'
       }
     }
   });

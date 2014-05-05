@@ -1,5 +1,5 @@
 {
-  "name": "picoSlides",
+  "name": "picoslides",
   "version": "1.0.0",
   "summary": "A responsive jQuery plugin for IFRAME-free embedding and simple navigation of SlideShare presentations",
   "description": "Leverages SlideShare's oEmbed API to offer two key features for bandwidth-conscious embedding: adaptive slide images for responsive interfaces and lazy slide loading a la YouTube",

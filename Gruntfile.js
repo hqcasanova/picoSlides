@@ -1,22 +1,22 @@
 module.exports = function(grunt) {
-  'use strict';	
+  'use strict';
 
   // Project configuration.
   grunt.initConfig({
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) 2014 Hector Quintero Casanova | <%= pkg.license %> */\n',
+    banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) 2014 Hector Quintero Casanova | Released under <%= pkg.license.type %> License */\n',
     // Task configuration.
     jshint: {
       src: ['Gruntfile.js', '<%= pkg.name %>.js'],
       options: {
 	jshintrc: true
-      }     
+      }
     },
     watch: {
       files: ['Gruntfile.js', '<%= pkg.name %>.js'],
       tasks: 'default'
-    },	
+    },
     uglify: {
       options: {
         banner: '<%= banner %>'
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
+
   // Default task.
   grunt.registerTask('default', ['jshint', 'uglify']);
 };

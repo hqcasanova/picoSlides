@@ -16,7 +16,7 @@ Quick Setup
 
 To install with default [options](//github.com/hqcasanova/picoSlides#options), follow the steps below:
 
-1. **Download the [latest release](https://github.com/hqcasanova/picoSlides/releases)** from GitHub. Alternatively, you can fetch the script from the Bower or NPM repositories:
+1. **Download the [latest release](https://github.com/hqcasanova/picoSlides/releases)** from GitHub. Alternatively, you can use the Bower or NPM repositories:
 	```bash
 	bower install picoSlides
 	/* or */
@@ -24,7 +24,7 @@ To install with default [options](//github.com/hqcasanova/picoSlides#options), f
 	```
 	Notice that an all-lowercase name must be provided to NPM.
 
-2. Include the **`picoSlides.min.js` script** in your HTML:
+2. Include the **`picoSlides.min.js` script in your HTML**:
 	```html
 	<script src="picoSlides.min.js"></script>
 	```

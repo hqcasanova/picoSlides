@@ -16,23 +16,31 @@ Quick Setup
 
 To install with default [options](//github.com/hqcasanova/picoSlides#options), follow the steps below:
 
-1. If not present already, include **`jQuery.js` (version 1.6.0 at least)** in your HTML:
-	```html
-	<script src="jquery.min.js"></script>
+1. **Download the [latest release](https://github.com/hqcasanova/picoSlides/releases)** from GitHub. Alternatively, you can fetch the script from the Bower or NPM repositories:
+	```bash
+	bower install picoSlides
+	/* or */
+	npm install picoslides
 	```
+	Notice that an all-lowercase name must be provided to NPM.
 
-2. Once [downloaded](https://github.com/hqcasanova/picoSlides/archive/v1.0.0.zip), include also the **`picoSlides.min.js` script**:
+2. Include the **`picoSlides.min.js` script** in your HTML:
 	```html
 	<script src="picoSlides.min.js"></script>
 	```
 
-3. For each presentation, **add a `data-src` attribute** pointing to its URL on SlideShare:
+3. If not present already, include **`jQuery.js` (version 1.6.0 at least)** too:
+	```html
+	<script src="jquery.min.js"></script>
+	```
+
+4. For each presentation, **add a `data-src` attribute** pointing to its URL on SlideShare:
 	```html
 	<span class="slides" data-src="http://www.slideshare.net/hqcasanova/adapro"></span>
 	```
 	The container can be any tag and may be given a class to facilitate selection. However, the latter is not required either.
 
-4. Finally, **call the picoSlides plugin** on all containers:
+5. Finally, **call the picoSlides plugin** on all containers:
 	```javascript
 	$('span.slides').picoSlides();
 	```

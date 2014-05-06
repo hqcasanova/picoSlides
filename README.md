@@ -3,7 +3,7 @@ picoSlides
 
 <img src="http://hqcasanova.github.io/picoSlides/picoSlides.png" align="left" hspace="10" vspace="1">
 
-Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a **jQuery plugin** for directly embedding *SlideShare* presentations without using IFRAMEs. It leverages SlideShare's **oEmbed API** to offer a responsive interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
+Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a **jQuery plugin** for directly embedding *SlideShare* presentations without using IFRAMEs. It leverages SlideShare's [oEmbed API](http://www.slideshare.net/developers/oembed) to offer a **responsive** interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 
 - **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
 
@@ -87,7 +87,10 @@ There are two kinds of settings: those having to do with the slides and those mo
 #### Slide-related: interface, Holder and Lazy Load options, callbacks and errors
 
 - `aspectRatio` *3 / 4*: common aspect ratio of slides.
-- `imgMaxWidth` *0*: maximum width of slides in pixels. If equal to `0`, it takes the container's width. However, if the container has no defined width, then the smallest image is fetched.
+- `imgMaxWidth` *0*: corresponds to the `maxwidth` parameter in the [oEmbed API](http://www.slideshare.net/developers/oembed). It is effectively the minimum width in pixels of the slide images to be fetched. If equal to `0`, it takes the container's width. However, if the container has no defined width, then the smallest image is fetched. SlideShare currently serves slide images with the following dimensions:
+  * 320 × 240
+  * 425 × 319
+  * 1024 × 768
 - `nextTitle` *'Next'*: tooltip text for 'Next' button.
 - `prevTitle` *'Previous'*: tooltip text for 'Previous' button.
 - `skipFTitle` *'Skip to last slide'*: tooltip text for 'Skip forward' button.
@@ -158,7 +161,21 @@ Plugin Architecture
 
 - The plugin's structure is based on the **"highly configurable" pattern** proposed by [Mark Dalgleish](http://markdalgleish.com/2011/05/creating-highly-configurable-jquery-plugins/).
 - To minimise the performance penalty derived from the heavy use of inline styles, a kind of **factory pattern** is employed. All DOM elements are generated only once and stored in an object that acts as a "library" of elements. Whenever insertion is due, the relevant element is pulled from the library and cloned.
-- The plugin makes **minimal use of jQuery**. Future implementations will be library-agnostic.
+- Each slideset has the following basic HTML structure, assuming a `<div>` tag as a container for example:
+  ```html
+  <div class="containerSlide">
+  	<img class="firstSlide" />
+  	...
+  	<img class="lastSlide" />
+  	<span class="controlSlide hideFirstSlide prevSlide"></span>   <!-- 'Previous' button -->
+  	<span class="controlSlide hideLastSlide skipFSlide"></span>   <!-- 'Skip forward' button -->
+  	<span class="controlSlide hideFirstSlide skipBSlide"></span>  <!-- 'Skip backward' button -->
+  	<span class="controlSlide hideLastSlide nextSlide"></span>    <!-- 'Next' button -->
+  	<span class="countSlide"></span>                              <!-- Slide counter -->
+  	<span class="loadingSlide"></span>                            <!-- Loading indicator -->
+  </div>
+  ```
+- The plugin tries to make **minimal use of jQuery**. Future implementations will ultimately be library-agnostic.
 
 License
 -------

@@ -160,8 +160,8 @@ Plugin Architecture
 -------------------
 
 - The plugin's structure is based on the **"highly configurable" pattern** proposed by [Mark Dalgleish](http://markdalgleish.com/2011/05/creating-highly-configurable-jquery-plugins/).
-- To minimise the performance penalty derived from the heavy use of inline styles, a kind of **factory pattern** is employed. All DOM elements are generated only once and stored in an object that acts as a "library" of elements. Whenever insertion is due, the relevant element is pulled from the library and cloned.
-- Each slideset has the following basic HTML structure, assuming a `<div>` tag as a container for example:
+- To minimise the performance penalty derived from DOM manipulation and the heavy use of inline styles, a kind of **factory pattern** is employed. All DOM elements are generated only once and stored in an object that acts as a "library" of elements. Whenever insertion is due, the relevant element is pulled from the library and cloned.
+- Each slideset has the following basic HTML structure, assuming a `<div>` tag as the container:
 
 ```html
   <div class="containerSlide">

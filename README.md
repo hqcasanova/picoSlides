@@ -5,16 +5,16 @@ picoSlides
 
 Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the way? That's what *picoSlides* is for: a **jQuery plugin** for directly embedding *SlideShare* presentations without using IFRAMEs. It leverages SlideShare's [oEmbed API](http://www.slideshare.net/developers/oembed) to offer a **responsive** interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 
-- **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](//github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
+- **Adaptive slide images**: fetches device-appropriate versions of images depending on the dimensions of the slideset container. See the [`imgMaxWidth` option](http://github.com/hqcasanova/picoSlides#slide-related-interface-holder-and-lazy-load-options-callbacks-and-errors).
 
 - **Lazy slide loading**: the first slide image is used as a preview poster of the whole presentation, a la YouTube.  The remaining slides are downloaded only if the user hits the 'Next' button.
 
-You can check out the plugin in action on the [project page](http://hqcasanova.github.io/picoSlides/). Read [below](//github.com/hqcasanova/picoSlides#features) for a list of all the features.
+You can check out the plugin in action on the [project page](http://hqcasanova.github.io/picoSlides/). Read [below](http://github.com/hqcasanova/picoSlides#features) for a list of all the features.
 
 Quick Setup
 -----------
 
-To install with default [options](//github.com/hqcasanova/picoSlides#options), follow the steps below:
+To install with default [options](http://github.com/hqcasanova/picoSlides#options), follow the steps below:
 
 1. **Download the [latest release](https://github.com/hqcasanova/picoSlides/releases)** from GitHub. Alternatively, you can use the Bower or NPM repositories:
 	```bash
@@ -50,8 +50,8 @@ Features
 --------
 
 - **Compatible with all modern browsers**: tested in IE8+, Android 2.1+, iPhone 3+ and various versions of other browsers (Firefox/IceWeasel and Chromium).
-- **Auto-detects Lazy Load and Holder***: ensures smooth lazy loading of the first slide image. Includes [options](//github.com/hqcasanova/picoSlides#options) that control Holder's theme and Lazy Load's behaviour.
-- **Highly customisable**: from slide aspect ratio, through button size to callback functions; there's an [option](//github.com/hqcasanova/picoSlides#options) for nearly everything.
+- **Auto-detects Lazy Load and Holder***: ensures smooth lazy loading of the first slide image. Includes [options](http://github.com/hqcasanova/picoSlides#options) that control Holder's theme and Lazy Load's behaviour.
+- **Highly customisable**: from slide aspect ratio, through button size to callback functions; there's an [option](http://github.com/hqcasanova/picoSlides#options) for nearly everything.
 - **Responsive design**: by default, slide image size depends on the width of the container and thumb-friendly buttons are provided.
 - **Bandwidth efficient**: slide images can be made adaptive. Also, only the cover slide is shown at first. The remaining slides are "lazy loaded".
 - **Self-contained**: doesn't require loading any additional CSS or image file. All navigation icons are CSS shapes.
@@ -102,7 +102,7 @@ There are two kinds of settings: those having to do with the slides and those mo
 - `linkIcon` *0*: icon for bottom link. If equal to `0`, the favicon at the link's URL is used instead.
 - `linkTitle` *'View on SlideShare'*: tooltip text for the bottom link.
 - `linkHides` *true*: the link can be shown only on the first and last slides.
-- `holderTheme` *'picoSlide'*: theme for Holder plugin. The default `picoSlide` theme makes the placeholder blank with its background colour being [`cssBgColor`](//github.com/hqcasanova/picoSlides#element-related-attributes-loading-indicator-and-css-styles). A value of `false` disables the use of Holder, even if present.
+- `holderTheme` *'picoSlide'*: theme for Holder plugin. The default `picoSlide` theme makes the placeholder blank with its background colour being [`cssBgColor`](http://github.com/hqcasanova/picoSlides#element-related-attributes-loading-indicator-and-css-styles). A value of `false` disables the use of Holder, even if present.
 - `apiUrl` *'http://www.slideshare.net/api/oembed/2?url='*: oEmbed API's URL.
 - `loadFirst` *function () {}*: callback after loading first slide image.
 - `loadAll` *function () {}*: callback after loading all of the slides.

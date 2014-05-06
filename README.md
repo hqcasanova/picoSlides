@@ -19,7 +19,8 @@ To install with default [options](//github.com/hqcasanova/picoSlides#options), f
 1. **Download the [latest release](https://github.com/hqcasanova/picoSlides/releases)** from GitHub. Alternatively, you can use the Bower or NPM repositories:
 	```bash
 	bower install picoSlides
-	/* or */
+	```
+	```bash
 	npm install picoslides
 	```
 	Notice that an all-lowercase name must be provided to NPM.

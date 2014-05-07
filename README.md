@@ -64,7 +64,7 @@ body > span {
 	display: inline-block;
 	overflow: hidden;
 	width: 33.3%;          /* 3-column layout */
-	padding-top: 24.95%;   /* aspect ratio 3:4 */
+	padding-top: 24.95%;   /* aspect ratio 4:3 */
 }
 span.containerSlide > img:first-child {
 	position: absolute;    /* counteracts fixed height */

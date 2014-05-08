@@ -9,7 +9,7 @@ Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the
 
 - **Lazy slide loading**: the first slide image is used as a preview poster of the whole presentation, a la YouTube.  The remaining slides are downloaded only if the user hits the 'Next' button.
 
-![Responsive SlideShare Embeds](http://hqcasanova.github.io/picoSlides/responsive.jpg)
+<img src="http://hqcasanova.github.io/picoSlides/responsive.jpg" align="center" hspace="10" vspace="1">
 
 You can check out the plugin in action on the [project page](http://hqcasanova.github.io/picoSlides/). Read [below](http://github.com/hqcasanova/picoSlides#features) for a list of all the features.
 

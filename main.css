@@ -163,10 +163,10 @@ h1 img {
     }
     #info {
         padding-bottom: 4%;
-        -webkit-background-size: 50%;
-	    -moz-background-size: 50%;
-	    -o-background-size: 50%;
-	    background-size: 50%;
+        -webkit-background-size: 50% auto;
+	    -moz-background-size: 50% auto;
+	    -o-background-size: 50% auto;
+	    background-size: 50% auto;
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
@@ -177,10 +177,10 @@ h1 img {
 	body > span, #title {width: 50%}
 	p, ul {font-family: sans-serif}
 	#info {
-	    -webkit-background-size: 30%;
-	    -moz-background-size: 30%;
-	    -o-background-size: 30%;
-	    background-size: 30%;
+	    -webkit-background-size: 30% auto;
+	    -moz-background-size: 30% auto;
+	    -o-background-size: 30% auto;
+	    background-size: 30% auto;
 	    -moz-column-count: 2;
 	    -webkit-column-count: 2;
 	    column-count: 2;

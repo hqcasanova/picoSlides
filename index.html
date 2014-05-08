@@ -6,115 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="A responsive jQuery plugin for IFRAME-free embedding and simple navigation of SlideShare presentations" />
 	<title>picoSlides | Responsive plugin for SlideShare's oEmbed</title>
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
-	<style type="text/css">
-		html, body, h1, p {
-		    margin: 0;
-		    padding: 0;
-		}
-		a {text-decoration: none}
-	    html, body {
-		    line-height: 0;
-		    width: 100%;
-		    height: 100%;
-		}
-		body {
-			background: black;
-			text-align: right;
-		}
-		body > span {
-			display: inline-block;
-			overflow: hidden;
-			width: 33.3%;
-			padding-top: 24.95%;
-		}
-		span.containerSlide > img:first-child {
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		img.loadingSlide {
-			margin-left: -36.5px;
-			margin-top: -20.5px;
-		}
-		#title {
-			width: 33.3%;
-			z-index: 99;
-			position: absolute;
-		}
-		h1 {
-			display: inline;
-			line-height: normal;
-			color: gray;
-		}
-		h1 img {vertical-align: middle}
-		a.infoButton {
-			float: right;
-			margin: 5px;
-			width: 50px;
-			line-height: 57px;
-			text-align: center;
-			font-size: 23px;
-			font-weight: bold;
-			font-style: italic;
-			background: #008ad2;
-			opacity: .75;
-			border-radius: 10px;
-		}
-		a.infoButton:hover {opacity: 1}
-		a.infoButton, h1 {font-family: serif}
-		#info {
-			padding: 1.5%;
-			color: #f0f0f0;
-			line-height: 1.5em;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 500;
-			background: url('watermark.png') bottom right no-repeat #0276C1;
-			-moz-column-gap: 20px;
-	        -webkit-column-gap: 20px;
-	        column-gap: 20px;
-	        -moz-column-count: 3;
-	        -webkit-column-count: 3;
-	        column-count: 3;
-		}
-		#info, #title {text-align: left}
-		#info > p:last-child {text-align: center}
-		#info a {
-			display: inline-block;
-			padding: 7px;
-			font-size: 1.5em;
-			border: 2px solid #f0f0f0;
-			border-radius: 10px;
-		}
-		#info a:hover {border-color: #dc8422}
-		#info em {font-size: 1.05em}
-		#info strong, #info em, #info a, a.infoButton {color: #F38C4B}
-		@media only screen and (max-width: 639px ) {
-			body > span {padding-top: 75%}
-			body > span, #title {width: 100%}
-			#info {
-				font-family: sans-serif;
-				-moz-column-count: 1;
-				-webkit-column-count: 1;
-				column-count: 1;
-			}
-		}
-		@media only screen and (min-width: 640px) and (max-width: 959px ) {
-			body > span {padding-top: 37.5%}
-			body > span, #title {width: 50%}
-			#info {
-				font-family: sans-serif;
-				-moz-column-count: 2;
-				-webkit-column-count: 2;
-				column-count: 2;
-			}
-		}
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+	<link href="main.min.css" rel="stylesheet" type="text/css">
 	</style>
 </head>
 <body>
 	<div id="title">
-		<h1><img alt="logo" src="picoSlides.png" height="67" width="67"/>picoSlides</h1>
-		<a class="infoButton" href="#info" title="More information">+i</a>
+		<h1><img alt="logo" src="picoSlides.png" height="97" width="84"/>picoSlides</h1>
+		<a class="infoButton" href="#banner" title="More information">+i</a>
 	</div>
 	<span class="linkHides" data-src="http://www.slideshare.net/alitamay/smithsonian-magazine-2nd-annual-photo-contest" data-options='{"linkUrl": false}'></span><!--
 	--><span class="linkHides" data-src="http://www.slideshare.net/ssuser63877e/national-geographic-traveler-photo-contest-20141"></span><!--
@@ -139,6 +38,15 @@
 		$('span.linkStays').picoSlides({linkHides: false});
 		$('span.linkHides').picoSlides();
 	</script>
+	<div id="banner">
+		<div itemscope itemtype="http://schema.org/SoftwareApplication">
+			<img itemprop="image" alt="logo" src="picoSlides.png" height="97" width="84"/>
+			<h2 itemprop="name">picoSlides</h2>
+			<p itemprop="description">Responsive SlideShare Embeds</p>
+			<a itemprop="url" href="https://github.com/hqcasanova/picoSlides"><img alt="Fork me on GitHub" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" /></a>
+		</div>
+		<img alt="responsive" src="responsive.jpg" height="348" width="530"/>
+	</div>
 	<div id="info" >
 		<p>Trying to craft a nifty gallery like the one above but IFRAMEs keep getting in the way? That's what <em>picoSlides</em> is for: a <strong>jQuery plugin</strong> for directly embedding <em>SlideShare</em> presentations without using IFRAMEs. It leverages SlideShare's oEmbed API to offer a <strong>responsive</strong> interface that enables optimal use of bandwidth and simple slide navigation. Two features set this plugin apart:
 		<ul>
@@ -147,5 +55,9 @@
 		</ul>
 		<p><a title="GitHub page" href="https://github.com/hqcasanova/picoSlides#quick-setup">Download and Setup</a></p>
 	</div>
+	<ul id="footer">
+		<li><img alt="MIT" src="mit.png" width="120" height="64"/><a class="mit" title="The MIT License" href="http://opensource.org/licenses/MIT">Released under <em>MIT License</em></a></li><!--
+	 --><li><a class="hq" title="HQCasanova.com" href="http://www.hqcasanova.com">Created by <em>HQCasanova</em></a><img alt="HQCasanova" src="hq.png" width="64" height="64"/></li>
+	</ul>
 </body>
 </html>

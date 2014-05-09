@@ -1,8 +1,12 @@
 {
   "name": "picoSlides",
   "main": "picoSlides.js",
-  "version": "1.0.0",
-  "homepage": "https://github.com/hqcasanova/picoSlides",
+  "version": "1.0.1",
+  "homepage": "http://hqcasanova.github.io/picoSlides/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hqcasanova/picoSlides.git"
+  },
   "authors": [
     "hqcasanova <hqcasanova@yahoo.com>"
   ],
@@ -24,7 +28,7 @@
   ],
   "dependencies": {
     "jquery": ">=1.6.0"
-  }, 	
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",

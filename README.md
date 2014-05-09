@@ -118,15 +118,15 @@ There are two kinds of settings: those having to do with the slides and those mo
 
 - `altAttr` *''*: alt attribute for all img elements.
 - `lazyAttr` *'data-original'*: lazy Load plugin's name for src attribute.
-- `loadingImg` *base-64 gif*: animated image displayed while loading in progress.
+- `loadingImg` *base-64 gif*: animated image displayed while loading is in progress. It's the main container's background.
 - `cssButtonSize` *'45px'*: size of all controls.
-- `cssPadding` *'15px'*: default padding for secondary containers (loading indicator and slide counter).
+- `cssPadding` *'15px'*: default padding for secondary containers (slide counter).
 - `cssFontSize` *'.9em'*: default font size for all text elements.
 - `cssLineHeight` *'1.5em'*: default line height for all text elements.
 - `cssFontFamily` *'sans-serif'*: default font family for all text elements.
 - `cssBgColor` *'gray'*: background colour for controls and main container.
 - `cssFgColor` *'white'*: foreground colour for text and control symbols.
-- `cssSeparation` *'1.5%'*: default separation between edge of slides container and controls.
+- `cssSeparation` *'1.5%'*: default separation between the edge of the main container and the various controls.
 - `cssRadius` *'0px'*: border radius of all elements.
 - `cssOpacity` *0.65*: opacity of all interface elements.
 
@@ -177,7 +177,6 @@ Plugin Architecture
   	<span class="controlSlide hideFirstSlide skipBSlide"></span>  <!-- 'Skip backward' button -->
   	<span class="controlSlide hideLastSlide nextSlide"></span>    <!-- 'Next' button -->
   	<span class="countSlide"></span>                              <!-- Slide counter -->
-  	<span class="loadingSlide"></span>                            <!-- Loading indicator -->
   </div>
 ```
 - The plugin tries to make **minimal use of jQuery**. Future implementations will ultimately be library-agnostic.
@@ -185,7 +184,7 @@ Plugin Architecture
 License
 -------
 
-All code is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License). In essence, use and modify at your own peril and leave the copyright header intact.
+All code is licensed under the [MIT License](http://opensource.org/licenses/MIT). In essence, use and modify at your own peril and leave the copyright header intact.
 
 Feedback
 --------

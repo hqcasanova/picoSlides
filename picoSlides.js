@@ -1,4 +1,4 @@
-/* picoSlides v1.0.0
+/* picoSlides v1.0.1
  * Copyright (c) 2014 Hector Quintero Casanova
  * Released under the MIT license
  */
@@ -52,7 +52,6 @@
             vBarCommonStyle,    //CSS properties for vertical bar in FF and RW buttons
             countElem,          //Outermost native span element wrapping bottom slide counter
             countChild,         //First immediate descendant of countElem
-            loadElem,           //Native image element for loading indicator
             firstElem,          //Native image element for the first slide
             slideElem,          //Native image element for slides other than the first (added in bulk)
             noSelect = {        //CSS for non-selectable items
@@ -74,7 +73,7 @@
             container.style.textAlign = 'center';
             container.style.lineHeight = 0; //Solves issue in HTML5 about a gap between container and the bottom of slide images
             container.style.color = elementDefs.cssFgColor;
-            container.style.background = elementDefs.cssBgColor;
+            container.style.background = 'url("' + elementDefs.loadingImg + '") center center no-repeat ' + elementDefs.cssBgColor;
             container.style.borderRadius = elementDefs.cssRadius;
             $(container).css(noSelect);
             return;
@@ -123,16 +122,6 @@
             'vertical-align': 'middle'
         };
 
-        loadElem = document.createElement('img');
-        loadElem.className = 'loadingSlide';
-        loadElem.src = elementDefs.loadingImg;
-        loadElem.style.padding = elementDefs.cssPadding;
-        loadElem.style.backgroundColor = elementDefs.cssBgColor;
-        loadElem.style.opacity = elementDefs.cssOpacity;
-        loadElem.style.borderRadius = elementDefs.cssRadius;
-        loadElem.style.top = '50%';
-        loadElem.style.left = '50%';
-
         firstElem = document.createElement('img');
         firstElem.alt = elementDefs.altAttr;
         firstElem.style.width = '100%';
@@ -142,16 +131,16 @@
         firstElem.className = 'firstSlide';
 
         slideElem.style.position = 'absolute';
-        slideElem.style.top = '0';
-        slideElem.style.left = '0';
+        slideElem.style.top = 0;
+        slideElem.style.left = 0;
         slideElem.style.visibility = 'hidden';
-        slideElem.style.opacity = '0';
+        slideElem.style.opacity = 0;
 
         countElem = document.createElement('span');
         countElem.className = 'countSlide';
         countElem.style.display = 'none';   //in case the presentation is just 1 slide long
         countElem.style.position = 'absolute';
-        countElem.style.bottom = '0';
+        countElem.style.bottom = 0;
         countElem.style.left = '25%';
         countElem.style.right = '25%';
         countElem.style.backgroundColor = 'transparent';
@@ -251,9 +240,6 @@
             //Slide counter
             count: countElem,
 
-            //Loading indicator image
-            load: loadElem,
-
             //First slide
             first: firstElem,
 
@@ -276,7 +262,6 @@
         this.sourceUrl = this.$elem.data('src');    //URL of the presentation on Slideshare
         this.toLoad = -1;       //number of slides left to load
         this.counter = null;    //Native span element for the slide counter
-        this.loadingImg = null; //Native img element for the loading indicator
         this.currentSlide = null; //Native img element for slide currently being displayed
     };
 
@@ -315,7 +300,6 @@
         init: function () {
             this.settings = $.extend({}, this.defaults, this.options, this.metadata);
             elementLibrary(this.elem);
-            this.loadingImg = this.elem.appendChild(elementLib.load.cloneNode(false));
             this.getCover();
             this.elem.thisRef = this;
             //The thisRef is for later use within onload event handlers (see 'onLoadHandler' function)
@@ -329,11 +313,11 @@
          */
         loading: function (wait) {
             if (wait) {
-                this.elem.style.cursor = 'wait';
-                this.loadingImg.style.display = 'block';
+                //this.elem.style.cursor = 'wait';
+                this.elem.style.backgroundImage = 'url("' + elementDefs.loadingImg + '")';
             } else {
-                this.elem.style.cursor = 'default';
-                this.loadingImg.style.display = 'none';
+                //this.elem.style.cursor = 'default';
+                this.elem.style.backgroundImage = 'none';
             }
         },
 
@@ -446,9 +430,6 @@
             _this = this;
 
             //Feedback: show loading indicator (centered on image) and wait cursor
-            this.loadingImg.style.position = 'absolute';
-            this.loadingImg.style.marginLeft = '-' + ($(this.loadingImg).width() / 2 + parseInt(elementDefs.cssPadding, 10)) + 'px';
-            this.loadingImg.style.marginTop = '-' + ($(this.loadingImg).height() / 2 + parseInt(elementDefs.cssPadding, 10)) + 'px';
             this.loading(true);
 
             //Builds and prepares first slide, next button and counter for DOM insertion

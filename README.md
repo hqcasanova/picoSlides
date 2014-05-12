@@ -80,7 +80,7 @@ span.containerSlide > img:first-child {
 Minimum Requirements
 --------------------
 
-- **Modern browser**: the plugin's functionality on outdated browsers such as IE6/7 is severely limited. Nevertheless, it degrades as gracefully as possible. IE8 is supported.
+- **Modern browser**: the plugin's functionality on outdated browsers such as IE6/7 is severely limited. Nevertheless, it degrades as gracefully as possible. IE8 and Android 2.x are largely supported except when used in combination with Holder.js. In our tests with Android 2.1, Holder's canvas fallback behaved unexpectedly on screen rotation.
 - **jQuery 1.6.0+**: though still usable with jQuery 1.5, full functionality and satisfactory performance is only guaranteed with 1.6. Notice also that jQuery 2.x does not support IE6-8.
 
 Options
@@ -91,7 +91,7 @@ There are two kinds of settings: those having to do with the slides and those mo
 #### Slide-related: interface, Holder and Lazy Load options, callbacks and errors
 
 - `aspectRatio` *3 / 4*: common aspect ratio of slides.
-- `imgMaxWidth` *0*: corresponds to the `maxwidth` parameter in the [oEmbed API](http://www.slideshare.net/developers/oembed). It is effectively the minimum width in pixels of the slide images to be fetched. If equal to `0`, it takes the container's width. However, if the container has no defined width, then the smallest image is fetched. SlideShare currently serves slide images with the following dimensions:
+- `imgMaxWidth` *0*: corresponds to the `maxwidth` parameter in the [oEmbed API](http://www.slideshare.net/developers/oembed). It is effectively the minimum width in pixels of the slide images to be fetched. If equal to `0`, it takes the container's width. However, if the container has no defined width, then the smallest image is fetched. As of May 2014, SlideShare serves images with the following dimensions:
   * 320 × 240
   * 425 × 319
   * 1024 × 768
@@ -99,7 +99,7 @@ There are two kinds of settings: those having to do with the slides and those mo
 - `prevTitle` *'Previous'*: tooltip text for 'Previous' button.
 - `skipFTitle` *'Skip to last slide'*: tooltip text for 'Skip forward' button.
 - `skipBTitle` *'Skip to first slide'*: tooltip text for 'Skip back' button.
-- `fadeDuration` *0*: time length of all fade-in effects in milliseconds. It corresponds to the `duration` parameter of jQuery's fadeIn and fadeOut functions. If equal to `0`, there's no fade-in.
+- `fadeDuration` *0*: time length of all fade-in effects in milliseconds. It corresponds to the `duration` parameter of jQuery's fadeIn and fadeOut functions. If equal to `0`, there's no fading effect.
 - `seqLoad` *true*: if enabled, multiple slides are forced to be downloaded and displayed according to slide number. Set to `false` for better performance.
 - `lazyLoad` *{}*: options for lazy loading the first slide. Equivalent to the object passed to the `lazyload()` function. If `false`, Lazy Load is not used even if present.
 - `linkUrl` *0*: URL for bottom link.  If equal to `0`, it's the presentation's URL on SlideShare. If `false` instead, then no link button is displayed.
@@ -172,10 +172,10 @@ Plugin Architecture
   	<img class="firstSlide" />
   	...
   	<img class="lastSlide" />
-  	<span class="controlSlide hideFirstSlide prevSlide"></span>   <!-- 'Previous' button -->
-  	<span class="controlSlide hideLastSlide skipFSlide"></span>   <!-- 'Skip forward' button -->
-  	<span class="controlSlide hideFirstSlide skipBSlide"></span>  <!-- 'Skip backward' button -->
-  	<span class="controlSlide hideLastSlide nextSlide"></span>    <!-- 'Next' button -->
+  	<span class="controlSlide hideFirstSlide prevSlide"></span>   <!-- Previous -->
+  	<span class="controlSlide hideLastSlide skipFSlide"></span>   <!-- Skip forward -->
+  	<span class="controlSlide hideFirstSlide skipBSlide"></span>  <!-- Skip backward -->
+  	<span class="controlSlide hideLastSlide nextSlide"></span>    <!-- Next -->
   	<span class="countSlide"></span>                              <!-- Slide counter -->
   </div>
 ```

@@ -13,6 +13,7 @@ h1, h2, .infoButton {
 }
 p, ul {font-family: 'Open Sans', sans-serif}
 a {outline: 0; text-decoration: none}
+a img {border-style:none}
 a:active, a:focus {text-decoration: underline}
 body {
     background: black;

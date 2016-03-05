@@ -189,4 +189,4 @@ All code is licensed under the [MIT License](http://opensource.org/licenses/MIT)
 Feedback
 --------
 
-If you find a bug or shortcoming while using the plugin, please feel free to report it using github's [issue tracker](https://github.com/hqcasanova/picoSlides/issues). For other matters, you are more than welcome to leave a message on my [website](http://www.hqcasanova.com). Let me know if you find *picoSlides* useful. Thank you.
+If you find a bug or shortcoming while using the plugin, please feel free to report it using github's [issue tracker](https://github.com/hqcasanova/picoSlides/issues). For other matters, you are more than welcome to leave a message on my [website](http://www.hqcasanova.com/en/#contactForm). Let me know if you find *picoSlides* useful. Thank you.

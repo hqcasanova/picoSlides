@@ -99,9 +99,9 @@
     #info {
         padding-bottom: 4%;
         -webkit-background-size: 50% auto;
-	    -moz-background-size: 50% auto;
-	    -o-background-size: 50% auto;
-	    background-size: 50% auto;
+	-moz-background-size: 50% auto;
+	-o-background-size: 50% auto;
+	background-size: 50% auto;
     }
     .summary {
         -moz-column-count: 1;
@@ -110,12 +110,12 @@
     }
 }
 @media only screen and (min-width: 640px) and (max-width: 959px) {
-	#info {
-	    -webkit-background-size: 30% auto;
-	    -moz-background-size: 30% auto;
-	    -o-background-size: 30% auto;
-	    background-size: 30% auto;
-	}
+     #info {
+     	-webkit-background-size: 30% auto;
+	-moz-background-size: 30% auto;
+	-o-background-size: 30% auto;
+	background-size: 30% auto;
+    }
     .summary {
         -moz-column-count: 2;
         -webkit-column-count: 2;

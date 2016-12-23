@@ -8,7 +8,7 @@
     "url": "git://github.com/hqcasanova/picoSlides.git"
   },
   "authors": [
-    "hqcasanova <hqcasanova@yahoo.com>"
+    "hqcasanova <develop@hqcasanova.com>"
   ],
   "description": "A responsive jQuery plugin for IFRAME-free embedding and simple navigation of SlideShare presentations",
   "moduleType": [

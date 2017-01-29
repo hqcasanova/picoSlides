@@ -13,7 +13,7 @@ Trying to craft a nifty gallery of presentations but IFRAMEs keep getting in the
 	<img src="http://hqcasanova.github.io/picoSlides/responsive.jpg" alt="Responsive SlideShare Embeds">
 </p>
 
-You can check out the plugin in action on the [project page](http://hqcasanova.github.io/picoSlides/). Read [below](http://github.com/hqcasanova/picoSlides#features) for a list of all the features.
+Check out the [demo page](http://hqcasanova.github.io/picoSlides/) to see the plugin in action. For a full feature list, [read below](http://github.com/hqcasanova/picoSlides#features) .
 
 Quick Setup
 -----------
@@ -61,7 +61,7 @@ Features
 - **Self-contained**: doesn't require loading any additional CSS or image file. All navigation icons are CSS shapes.
 - **Multi-language**: all displayed text can be customised.
 
-*Please note that neither Lazy Load nor Holder are required. In fact, if the relative `width` of the slides' container is set on page load and the aspect ratio is known, a better alternative to Holder would be [CSS proportional resizing](http://wellcaffeinated.net/articles/2012/12/10/very-simple-css-only-proportional-resizing-of-elements/). That's precisely the technique used on the [project page](http://hqcasanova.github.io/picoSlides/):
+*Please note that neither Lazy Load nor Holder are required. In fact, if the relative `width` of the slides' container is set on page load and the aspect ratio is known, a better alternative to Holder would be [CSS proportional resizing](http://wellcaffeinated.net/articles/2012/12/10/very-simple-css-only-proportional-resizing-of-elements/). That's precisely the technique used on the [demo page](http://hqcasanova.github.io/picoSlides/):
 
 ```css
 body > span {

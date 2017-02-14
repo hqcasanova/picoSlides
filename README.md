@@ -54,14 +54,14 @@ Features
 --------
 
 - **Compatible with all modern browsers**: tested in IE8+, Android 2.1+, iPhone 3+ and various versions of other browsers (Firefox/IceWeasel and Chromium).
-- **Auto-detects Lazy Load and Holder***: ensures smooth lazy loading of the first slide image. Includes [options](http://github.com/hqcasanova/picoSlides#options) that control Holder's theme and Lazy Load's behaviour.
+- **Auto-detects [Lazy Load](https://github.com/tuupola/jquery_lazyload) and [Holder](https://github.com/imsky/holder)***: ensures smooth lazy loading of the first slide image. Includes [options](http://github.com/hqcasanova/picoSlides#options) that control Holder's theme and Lazy Load's behaviour.
 - **Highly customisable**: from slide aspect ratio, through button size to callback functions; there's an [option](http://github.com/hqcasanova/picoSlides#options) for nearly everything.
 - **Responsive design**: by default, slide image size depends on the width of the container and thumb-friendly buttons are provided.
 - **Bandwidth efficient**: slide images can be made adaptive. Also, only the cover slide is shown at first. The remaining slides are "lazy loaded".
 - **Self-contained**: doesn't require loading any additional CSS or image file. All navigation icons are CSS shapes.
 - **Multi-language**: all displayed text can be customised.
 
-*Please note that neither Lazy Load nor Holder are required. In fact, if the relative `width` of the slides' container is set on page load and the aspect ratio is known, a better alternative to Holder would be [CSS proportional resizing](http://wellcaffeinated.net/articles/2012/12/10/very-simple-css-only-proportional-resizing-of-elements/). That's precisely the technique used on the [demo page](http://hqcasanova.github.io/picoSlides/):
+*Please note that neither [Lazy Load](https://github.com/tuupola/jquery_lazyload) nor [Holder](https://github.com/imsky/holder) are required. In fact, if the relative `width` of the slides' container is set on page load and the aspect ratio is known, a better alternative to Holder would be [CSS proportional resizing](http://wellcaffeinated.net/articles/2012/12/10/very-simple-css-only-proportional-resizing-of-elements/). That's precisely the technique used on the [demo page](http://hqcasanova.github.io/picoSlides/):
 
 ```css
 body > span {
